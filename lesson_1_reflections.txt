@@ -1,0 +1,49 @@
+Q. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+A. Diff command with the -u flag compared the two files and returned line with different syntax
+found. At first, it was hard to read the results for comparison purpose but I quickly found
+that if I carefully read the tow sections and looked for the difference, I could assert if there
+was an intentional change or a typo.
+
+Q. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+A. If while updating or creating a newer version of a program and you go to test and find that something is broken in the new
+version, being able to go back to the last working version and comparing the two files side by side can speed the
+troubleshooting process tremendously. By using file comparison programs like diff -u on the Mac or Linux command line
+or fc on the windows command line, you can quickly isolate differences, typos, or other mistakes easily.
+
+Q. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having
+versions automatically saved, like Google Docs does?
+
+A. The advantage of manual commits verse automatic commits is that the developer gains control of the reasonableness of
+frequency. In the automatic commit model, there is the chance that frequency will mean many small sized versions that builds to
+a great number of versions, making it harder to review if looking for a bug.
+
+On the other hand, if the developer is not disciplined to create a good commit scheme and schedule, commits that are so large
+in size as to be burdensome to review when troubleshooting a bug. There may not be enough versions for comparison or they
+are so long as to increase the tedious nature of review.
+
+Q. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others,
+like Google Docs, treat each file separately?
+
+A. Git allows multiple files to be managed in one commit because of the interdependencies of program files verses the
+independent nature of regular documents such as business memos and letters. In front end development, the relationships
+between HTML, CSS and JavaScript remain intact through commits. This multiple file system is not necessary for normal documents.
+
+Q. How can you use the commands git log and git diff to view the history of files?
+
+A. The command git log will return a description listing all commits to a repo/project. It will include a unique id, date, and
+the message the programmer wrote about each commit. The command git diff will compare two different commits and list the changes
+between the two compared. It will show deletions and insertions compared to each other.
+
+Q. How might using version control make you more confident to make changes that could break something?
+
+A. Version control will allow the developer to commit a known working version, then make changes and commit
+these change and then test. If the test succeeds, great, if not, use git log to get id's and then git diff
+to compare the last working version with the broken version to find mistake.
+
+Q. Now that you have your workspace set up, what do you want to try using Git for?
+
+A. I will continue to use Git for my project version control and GitHub for backup and sharing/colaborating.
+I have learned better use of the git log command and the git diff command to track, find and fix bugs. I need to setup
+practice a logical commit system to have a good representation of changes and problem solving.
