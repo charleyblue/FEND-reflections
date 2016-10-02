@@ -1,0 +1,12 @@
+Q. What happens when you initialize a repository? Why do you need to do it?
+
+A, You initialize a local repo by using the git init command. This will setup the current directory as a Git
+Repository so you can begin to commit changes. You can use the command git status to check how many files
+are include in the new repo, if any, and if they have been committed or not. After git init you will not
+have any commits yet so that you can write commit messages.
+
+Q. How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+A. The Staging Area is an intermediary logical area between the Working Directory and the Git repository. It allows the developer to
+stage commits without add all files. I have found that things like node folders do not transfer well to GitHub so
+you may leave them out.
