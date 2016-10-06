@@ -10,3 +10,30 @@ Q. How is the staging area different from the working directory and the reposito
 A. The Staging Area is an intermediary logical area between the Working Directory and the Git repository. It allows the developer to
 stage commits without add all files. I have found that things like node folders do not transfer well to GitHub so
 you may leave them out.
+
+Q. How can you use the staging area to make sure you have one commit per logical change?
+
+A. We stage only the files deemed ready for a commit by using the git add <file name> command. We can use the command git reset to
+remove the file from the stage. We can then check the changes using the command git status.
+
+Q. What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A. Branches are used when you would like to introduce a new concept to a project such as a new untested feature. The master branch
+would contain the tested working version and the new branch would contain modified code.
+
+Q. How do the diagrams help you visualize the branch structure?
+
+A. A diagram of your repository will help visualize the different commits in each branch that you created.
+
+Q. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+A. The result of merging two branches is that the new merge commit will contain the commits from both branches back to when the two branches diverged.
+It is represented in the diagram to show that it includes the commits from both branches back to the point of divergence of the branches.
+
+Q. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A. I suppose that if you are sure that what you are merging is what you want to point to, then automatic merging is great. But, if for some reason
+you are not sure if your branches match what others might have committed, you should investigate first, make any changes through manual merging
+and then commit your changes and merge.
+
+Q. 
