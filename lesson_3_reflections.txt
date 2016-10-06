@@ -4,11 +4,15 @@ A. I would use a remote repository when I wanted to collaborate with a team, bac
 
 Q. Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 
-A.
+A. I would think that for manual git pull, you maintain control over what is pulled from the remote and when you pull files.
 
-Describe the differences between forks, clones, and branches.  When would you use one instead of another?
+Q. Describe the differences between forks, clones, and branches.  When would you use one instead of another?
 
-A.
+A. Forks are copies of public repositories that you make on GitHub. A forked repo lives on your remote account as well as the original
+author and you use it to build off of the original repo. Clones are copies that you download from the remote to your local repository. You
+would clone someone's repo if you are going to contribute to a project and get permission to submit changes.
+Branches are a new commit direction that you want to take your project in like adding a new feature before committing it to the
+working project. 
 
 Q. What is the benefit of having a copy of the last known state of the remote stored locally?
 
