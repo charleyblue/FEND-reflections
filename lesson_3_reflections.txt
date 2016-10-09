@@ -9,19 +9,24 @@ A. I would think that for manual git pull, you maintain control over what is pul
 Q. Describe the differences between forks, clones, and branches.  When would you use one instead of another?
 
 A. Forks are copies of public repositories that you make on GitHub. A forked repo lives on your remote account as well as the original
-author and you use it to build off of the original repo. Clones are copies that you download from the remote to your local repository. You
-would clone someone's repo if you are going to contribute to a project and get permission to submit changes.
-Branches are a new commit direction that you want to take your project in like adding a new feature before committing it to the
-working project. 
+   author and you use it to build off of the original repo. Clones are copies that you download from the remote to your local repository. You
+   would clone someone's repo if you are going to contribute to a project and get permission to submit changes.
+   Branches are a new commit direction that you want to take your project in like adding a new feature before committing it to the
+   working project.
 
 Q. What is the benefit of having a copy of the last known state of the remote stored locally?
 
-A.
+A. The benefit of having a copy of the last know state of the remote would be to track differences between your work
+   stored locally and that which is on the remote that other's maybe contributing to.
 
 Q. How would you collaborate without using Git or GitHub?  What would be easier, and what would be harder?
 
-A.
+A. Collaborating by email might be one way, exchanging files, working on them, and then updating the other party or parties
+   of your changes and vice a versa. Google Docs or MS OneDrive with sharing might be another way to collaborate but not as
+   efficient as Git and GitHub for coding.
 
 Q. When would you want to make changes in a separate branch rather than directly in master?  What benefits does each approach have?
 
-A.
+A. Adding a new feature so that you can test it before adding it to the main code. This allows you to test the new feature before merging
+it with the main code. It allows to test for bugs and correct any found before committing it to the main code. The main disadvantage
+to this method is the added complexity to a repository.
